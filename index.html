@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Change this to your name-->
+    <meta name="author" content="Stas" />
+
+    <title>Stas Maslov</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  </head>
+  <body>
+    <div id="me">
+      <img id="img" src="IMG_2672.jpg" alt="Picture of me" height="250px" width="250px" />
+      <p id="name">Stas Maslov</p>
+      <p id="occupation">Physicist</p>
+    </div>
+
+    <div class="buttons">
+      <div class="button-container">
+        <button id="button1"><a href="index.html" download="resume.pdf">⬇Resume</a></button>
+        <button id="button2">Contact Me</button>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <div class="item1">About Me</div>
+      <div class="item2">Basic Information</div>
+      <div class="item3">
+        My name is Stas and I am a student at Seneca College. Currently I am studying Computer
+        Programming, but in the future, I have ideas about also studying physics. Perhaps here, or
+        maybe at another college/university. In my free time I enjoy going for walks, reading and
+        watching movies. I also play Counter-Strike in an ESEA league, at a decently high level, so
+        I dedicate a decent chunk of my free time to practice that with my team.
+      </div>
+      <div class="item4">
+        <table>
+          <tr>
+            <td><b>AGE: </b></td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td><b>EMAIL: </b></td>
+            <td>maslov.stas10@gmail.com</td>
+          </tr>
+          <tr>
+            <td><b>LANGUAGE: </b></td>
+            <td>English, Russian and French</td>
+          </tr>
+          <tr>
+            <td><b>CLASS SECTION: </b></td>
+            <td>NFF</td>
+          </tr>
+          <tr>
+            <td><b>STUDENT ID: </b></td>
+            <td>120963228</td>
+          </tr>
+          <tr>
+            <td><b>INSTRUCTOR: </b></td>
+            <td>Mark Meritt</td>
+          </tr>
+        </table>
+      </div>
+      <div class="item5"><b>Date: </b>August 18th, 2023</div>
+    </div>
+
+    <h2 style="text-align: center">Education</h2>
+
+    <div class="education" style="margin-bottom: 25px">
+      <div class="item6">2022-2024</div>
+      <div class="item7">Ontario College Diploma</div>
+      <div class="item8">Seneca College</div>
+      <div class="item9">Awarded with all the scholarships in the world.</div>
+      <div class="item10"><b>Seneca College</b></div>
+    </div>
+
+    <div class="education">
+      <div class="item6">2015-2019</div>
+      <div class="item7">Ontario Secondary School Diploma</div>
+      <div class="item8">Lawrence Park Collegiate Institute</div>
+      <div class="item9">Awarded with all the scholarships in the world.</div>
+      <div class="item10"><b>Lawrence Park Collegiate Institute</b></div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <form action="https://httpbin.org/post" method="post">
+          <label for="name">Name:</label><br />
+          <input type="text" name="name" required /><br />
+          <label for="email">Email Address:</label><br />
+          <input type="text" name="email" required /><br /><br />
+          <label for="address">Address:</label><br />
+          <input type="text" name="address" required /><br /><br />
+          <label for="city">City:</label><br />
+          <input type="text" list="values" name="city" required /><br /><br />
+          <datalist id="values">
+            <option label="Barrie" value="Barrie"></option>
+            <option label="Calgary" value="Calgary"></option>
+            <option label="Charlottetown" value="Charlottetown"></option>
+            <option label="Cold Lake" value="Cold Lake"></option>
+            <option label="Edmonton" value="Edmonton"></option>
+            <option label="Hamilton" value="Hamilton"></option>
+            <option label="Ottawa" value="Ottawa"></option>
+            <option label="St. John" value="St. John"></option>
+            <option label="Toronto" value="Toronto"></option>
+            <option label="Vancouver" value="Vancouver"></option>
+            <option label="Winnipeg" value="Winnipeg"></option>
+            <option label="Yellowknife" value="Yellowknife"></option>
+          </datalist>
+          <label for="postalcode">Postal Code (A1A 1A1 Format):</label><br />
+          <input
+            type="text"
+            name="postalcode"
+            required
+            pattern="^[ABCEGHJ-NPRSTVXY]\d[ABCEGHJ-NPRSTV-Z] \d[ABCEGHJ-NPRSTV-Z]\d$"
+          />
+          <br /><br />
+          <fieldset>
+            <legend>Reason for Contact:</legend>
+
+            <label for="question">Question</label>
+            <input type="radio" name="reason" checked />
+
+            <label for="comment">Comment</label>
+            <input type="radio" name="reason" />
+
+            <label for="hiring">Hiring</label>
+            <input type="radio" id="hiring" name="reason" onclick="showRate()" />
+          </fieldset>
+          <div id="hourlyRate" style="display: none">
+            <label for="hourlyRate">Hourly rate:</label><br />
+            <input type="text" name="rate" required /><br /><br />
+          </div>
+          <label for="message">Your message:</label><br />
+          <textarea name="message" rows="5" required></textarea><br /><br />
+          <label for="rating">Rate my website:</label>
+          <input type="number" name="rating" min="1" max="5" required /><br />
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
+        <p>
+          Honesty Statement: I declare that my assessment is wholly my own work in accordance with
+          Seneca Academic Policy. No part of this assessment has been copied manually or
+          electronically from any other source (including web sites) except for the information
+          supplied by the WEB222 instructors and / or made available in this assessment for my use.
+          I also declare that no part of this assignment has been distributed to other students.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
