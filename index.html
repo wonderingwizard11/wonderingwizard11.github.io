@@ -17,7 +17,7 @@
 
     <div class="buttons">
       <div class="button-container">
-        <button id="button1"><a href="index.html" download="resume.pdf">⬇Resume</a></button>
+        <button id="button1"><a href="index.html" download="resume">⬇Resume</a></button>
         <button id="button2">Contact Me</button>
       </div>
     </div>
@@ -118,10 +118,10 @@
             <legend>Reason for Contact:</legend>
 
             <label for="question">Question</label>
-            <input type="radio" name="reason" checked />
+            <input type="radio" name="reason" onclick="hideRate()" checked />
 
             <label for="comment">Comment</label>
-            <input type="radio" name="reason" />
+            <input type="radio" name="reason" onclick="hideRate()" />
 
             <label for="hiring">Hiring</label>
             <input type="radio" id="hiring" name="reason" onclick="showRate()" />
