@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Lato:wght@300&family=Roboto&display=swap");
+
+body {
+  background-color: #3ec1d3;
+}
+
+#me {
+  margin-top: 80px;
+  margin-bottom: 15px;
+}
+
+#img {
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+}
+
+#name {
+  font-family: "Caprasimo", cursive;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#occupation {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+#button1 {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#button2 {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.info-box {
+  background-color: #f0f0f0;
+  padding: 10px 10px 10px 10px;
+  border-radius: 8px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  margin: 50px auto;
+  max-width: 800px;
+  display: grid;
+  grid-template-areas:
+    "title title tabletitle tabletitle"
+    "text text table table"
+    "text text table table"
+    "date date table table";
+  font-family: "Caprasimo", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.item1 {
+  grid-area: title;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.item2 {
+  grid-area: tabletitle;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 15px;
+}
+.item3 {
+  grid-area: text;
+}
+.item4 {
+  margin-left: 15px;
+  grid-area: table;
+}
+.item5 {
+  margin-top: 10px;
+  grid-area: date;
+}
+
+.education {
+  background-color: #f0f0f0;
+  padding: 10px 10px 10px 10px;
+  border-radius: 8px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  max-width: 800px;
+  display: grid;
+  grid-template-areas:
+    "dates degree degree degree"
+    "dates institution institution institution"
+    "degree1 explanation explanation explanation";
+  font-family: "Caprasimo", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.item6 {
+  grid-area: dates;
+  font-size: 12px;
+}
+
+.item7 {
+  grid-area: degree;
+  margin-bottom: 5px;
+}
+
+.item8 {
+  grid-area: institution;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.item9 {
+  margin-top: 10px;
+  grid-area: explanation;
+}
+
+.item10 {
+  margin-top: 10px;
+  grid-area: degree1;
+}
+
+.footer {
+  display: block;
+  margin-top: 70px;
+  background: #007bff;
+  border: black;
+  font-family: "Caprasimo", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 20px 0;
+}
